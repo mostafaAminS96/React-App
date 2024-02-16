@@ -1,0 +1,44 @@
+.coinDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coinDiv img {
+    width: 150px;
+    height: 150px;
+    transition: all;
+    transform: rotateY(0deg);
+
+}
+.flipping {
+    animation: filp 1s;
+    transform: rotateY(90deg)
+}
+
+.button {
+    background-color: silver;
+    margin: 10px;
+    width: 100px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+@keyframes filp {
+    from {
+        transform: rotateY(90deg)
+    }
+
+    to {
+        transform: rotateY(180deg)
+    }
+    to {
+        transform: rotateY(2700deg)
+    }
+    to {
+        transform: rotateY(3600deg)
+    }
+}
+
